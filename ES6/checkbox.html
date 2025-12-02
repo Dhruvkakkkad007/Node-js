@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" value="1" class="roll" onclick="show()">1
+    <input type="checkbox" value="2" class="roll" onclick="show()">2
+    <input type="checkbox" value="3" class="roll" onclick="show()">3
+
+    <p id="result"> </p>
+
+    <script>
+        let select = "";
+        let all = document.getElementsByClassName('roll')
+
+        function show() {
+            select = "";
+            for (i = 0; i < all.length; i++) {
+                if (all[i].checked) {
+                    select = select + all[i].value + ",";
+                }
+            } 
+            document.getElementById('result').innerHTML = select
+        
+        }
+
+    </script>
+</body>
+
+</html>
