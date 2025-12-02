@@ -1,0 +1,39 @@
+<!-- Write a JavaScript to take 2-digit number and then separate these 2 digits, then multiply ƒrst
+digit by itself for second digit times. (B) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = parseFloat(prompt("Enter n:"));
+
+        let i, fd, ld;
+
+        fd = Math.floor(n / 10);
+
+        ld = n % 10;
+
+        let ans = 1;
+
+        for (i = 1; i <= ld; i++) {
+            ans = ans * fd;
+        }
+        document.write("first digit = " + fd);
+
+        document.write("<br>")
+
+        document.write("last digit = " + ld);
+
+        document.write("<br>")
+
+        document.write("ans = " + ans);
+    </script>
+</body>
+
+</html>

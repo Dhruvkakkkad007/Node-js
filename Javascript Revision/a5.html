@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let n = parseFloat(prompt("Enter n:"));
+        let r,sum=0;
+        let temp=n;
+
+        while(n != 0)
+        {
+            r = n % 10;
+            sum = sum*10 + r;
+            n = Math.floor(n / 10); 
+        }
+
+        if(sum==temp){
+            document.write("Palindrone Number");
+        }
+        else{
+            document.write("Not Palindrone Number");
+        }
+
+    </script>
+</body>
+</html>
